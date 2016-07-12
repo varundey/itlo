@@ -1,1 +1,1 @@
-web: gunicorn slack.wsgi:application --log-file -
+web: gunicorn slack.wsgi --log-file -
