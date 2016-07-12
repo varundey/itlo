@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'slack.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.9/ref/settings/#databases
 
-DATABASES['default'] =  dj_database_url.config()
+# DATABASES['default'] =  dj_database_url.config()
 DATABASES = {
     # 'default': {
     #     'ENGINE': 'django.db.backends.sqlite3',
