@@ -5,7 +5,8 @@ from django.db import models
 # Create your models here.
 @python_2_unicode_compatible
 class State(models.Model):
-	state = models.CharField(max_length=5)
+	lab_is=(("Open!","Open"),("Close",'Close'))
+	state = models.CharField(max_length=5, choices=lab_is)
 
 	def __str__(self):
 		return self.state
