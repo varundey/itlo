@@ -13,9 +13,7 @@ def itlo(request):
 		return HttpResponse(json_data, content_type='application/json')
 	else:
 		data = {"text": "*Oopsies!*\nThe lab is closed right now. :confused:"}
-		json_data = json.dumps(data)
-		#return HttpResponse(":confused: Sorry, the lab is closed right now!")
-		
+		json_data = json.dumps(data)		
 		return HttpResponse(json_data, content_type='application/json')
 
 def whtk(request):
